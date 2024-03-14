@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+        <header>
+                <img class="cabecalho" src="./assets/Logo.png" alt="Logo da Alura"/>
+        </header>
+<main>
+        <section>
+            <textarea id="text" class="text" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <div class="informacao">
+            <h1>Apenas letras minúsculas e sem acento.</h1></div>
+            <div class="botoes">
+            <button onclick="criptografar()" class="botao_criptografar">Criptografar</button>
+            <button onclick="descriptografar()" class="botao_descriptografar">Descriptografar</button></div>
+        </section>
+
+        <section class="mensagem">
+            <textarea id="campo" cols="20" rows="10" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            <button  onclick="copiar()" class="botao_copiar">Copiar</button>
+        </section>
+</main>
+<footer class="rodape">
+    <p>Desenvolvido por Beatriz. 2024</p>
+</footer>
+</body>
+<script src="script.js" defer></script>
+</html>
