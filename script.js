@@ -42,10 +42,15 @@ function desencriptar(stringDesencriptada) {
 return stringDesencriptada;
 } 
 function copiar() {
-    const copiado = document.getElementById("campo").value;
-    navigator.clipboard.writeText(copiado);
+    const copiado = document.getElementById("campo");
+    copiado.addEventListener("click",()=> {
+    copiado.select();
+    copiado.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copiado.value);
+    })
     alert('Copiado!');
-}
+    
+} 
 
 
 
